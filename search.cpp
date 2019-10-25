@@ -27,7 +27,7 @@ std::vector<range> divide(range r) {
   return { {r.first,mid, r.el} , {mid + 1, r.last, r.el} };
 }
 
-int search(const int n, const int el, std::vector<int> &v){
+int searchDiv(const int n, const int el, std::vector<int> &v){
 	grppi::dynamic_execution ex = grppi::parallel_execution_native{};
 
 	range r{0, (int)v.size()-1, el};
@@ -42,6 +42,19 @@ int search(const int n, const int el, std::vector<int> &v){
 
 	return s;
 }
+
+//int searchMapRed(const int n, const int el, std::vector<int> &v){
+//	grppi::dynamic_execution ex = grppi::parallel_execution_native{};
+//
+//	auto s = grppi::map_reduce(ex, v.begin(), v.end(),
+//			bool{},
+//			[el](int r) { if( r == el) return true;
+//						else return false;},
+//			[](auto r1, auto r2) { return r1||r2;});
+//
+//
+//	return s;
+//}
 
 
 
@@ -69,7 +82,7 @@ int main(int argc, char **argv) {
  	      std::cout<< i;
   cout<<endl;
 
-  int s = search(n,el,v);
+  int s = searchDiv(n,el,v);
 
   if (s> -1) cout << "The element is at position " << s<<endl;
   else cout << "The element was not found."<<endl;
