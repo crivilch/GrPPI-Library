@@ -1,0 +1,11 @@
+Compilation:
+
+make [version=ptherads/omp/tbb/grppi]
+
+
+
+How to invoke:
+
+./swaptions ./outputfile [./timefile] [thr/omp/seq] -ns $num_swaptions -sm $num_simulations -nt $num_threads -sd $random_seed
+			
+			
