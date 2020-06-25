@@ -1,0 +1,10 @@
+Compilation:
+
+make [version=pthreads/tbb/grppi]
+
+
+
+How to invoke:
+
+./ferret corel lsh queryfolder $k $depth $num_threads ./outputfile ./timefile
+		
