@@ -1,0 +1,10 @@
+Compilation:
+
+make [version=pthreads/tbb/grppi/grppi_t]
+
+
+
+How to invoke:
+
+./streamcluster $min_center $max_center $point_dimensions $num_inputs $block_size $max_allowed none ./outputfile ./timefile $num_threads
+	
