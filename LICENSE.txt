@@ -1,0 +1,8 @@
+PARSEC uses a BSD-style license for their framework and everything else which they created and provide. 
+A list with all licenses used by PARSEC source code and inputs can be seen at https://parsec.cs.princeton.edu/license.htm
+
+
+GrPPI uses Apache 2.0 license as seen here https://github.com/arcosuc3m/grppi/blob/master/LICENSE
+
+
+This repository's license is one that respects all the above.
