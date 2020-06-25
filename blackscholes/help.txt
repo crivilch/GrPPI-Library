@@ -1,0 +1,14 @@
+Compilation:
+
+g++ -O3 -Wall --std=c++14 -DENABLE_THREADS -pthread -o blackscholes blackscholes.cpp hooks.c
+
+
+(if -DENABLE_PARSEC_HOOKS: -I/route_to_hooks.c -o blackscholes blackscholes.cpp hooks.c)
+
+
+
+
+How to invoke:
+
+./blackscholes num_threads num_options ./inputfile ./outputfile [./timefile]
+			
