@@ -1,0 +1,13 @@
+Compilation:
+
+make [version = pthreads/grppi/farm]
+
+
+
+How to invoke:
+code:
+./dedup -c -i inputfile -o outputfile -f timefile
+
+uncode:
+./dedup -u -i inputfile -o outputfile -f timefile
+		
